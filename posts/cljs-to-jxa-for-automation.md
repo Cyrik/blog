@@ -46,9 +46,14 @@ window will then be placed and resized over the initial window.
 You want to start your portal with your folder as a title:
 `(p/open {:portal.launcher/window-title (System/getProperty "user.dir")})`
 
+Usually I display it on a second montior just next to vscode, but that hard to
+screencaputure and you can easily play with the position/size numbers to fit your
+needs. You can also just remove the position/size assignment if you want to position
+the window manually.
+
 Here it is in action:
 
-![alt text](/assets/jxa-portal.gif)
+![alt text](/blog/assets/jxa-portal.gif)
 
 Once I got that running I something drove me to say: well, that's just JS, I'd rather
 write clojurescript.

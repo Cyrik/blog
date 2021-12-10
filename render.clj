@@ -164,7 +164,7 @@
   (-> (xml/sexp-as-element
        [::atom/feed
         {:xmlns "http://www.w3.org/2005/Atom"}
-        [::atom/title "Why the blog"]
+        [::atom/title "Lukas Domagala"]
         [::atom/link {:href (str blog-root "atom.xml") :rel "self"}]
         [::atom/link {:href blog-root}]
         [::atom/updated (rfc-3339-now)]

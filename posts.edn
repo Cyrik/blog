@@ -1,4 +1,4 @@
 {:title "Cljs to jxa for automation"
  :file "cljs-to-jxa-for-automation.md"
- :categories #{"clojure"}
+ :categories #{"clojure" "jxa" "clojurescript" "tools" "portal"}
  :date "2021-12-09"}
