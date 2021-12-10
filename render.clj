@@ -13,7 +13,7 @@
                     (edn/read-string (format "[%s]"
                                              (slurp "posts.edn")))))
 
-(def out-dir "public")
+(def out-dir "blog")
 
 (def base-html
   (slurp "templates/base.html"))
@@ -63,7 +63,7 @@
 
 (fs/create-dirs (fs/file ".work"))
 
-(def discuss-fallback "https://github.com/borkdude/blog/discussions/categories/posts")
+(def discuss-fallback "https://github.com/cyrik/blog/discussions/categories/posts")
 
 (doseq [{:keys [file title date legacy discuss]
          :or {discuss discuss-fallback}}
@@ -156,7 +156,7 @@
         now (java.time.ZonedDateTime/of (.atTime local-date 23 59 59) java.time.ZoneOffset/UTC)]
     (.format now fmt)))
 
-(def blog-root "https://blog.michielborkent.nl/")
+(def blog-root "https://lukas-domagala.de/blog/")
 
 (defn atom-feed
   ;; validate at https://validator.w3.org/feed/check.cgi
@@ -164,13 +164,13 @@
   (-> (xml/sexp-as-element
        [::atom/feed
         {:xmlns "http://www.w3.org/2005/Atom"}
-        [::atom/title "REPL adventures"]
+        [::atom/title "Why the blog"]
         [::atom/link {:href (str blog-root "atom.xml") :rel "self"}]
         [::atom/link {:href blog-root}]
         [::atom/updated (rfc-3339-now)]
         [::atom/id blog-root]
         [::atom/author
-         [::atom/name "Michiel Borkent"]]
+         [::atom/name "Lukas Domagala"]]
         (for [{:keys [title date file preview]} posts
               :when (not preview)
               :let [html (str/replace file ".md" ".html")
