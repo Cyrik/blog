@@ -53,7 +53,8 @@ the window manually.
 
 Here it is in action:
 
-![alt text](/blog/assets/jxa-portal.gif)
+<!-- ![demo](/blog/assets/jxa-portal.gif) -->
+<img src="/blog/assets/jxa-portal.gif" width="800">
 
 Once I got that running I something drove me to say: well, that's just JS, I'd rather
 write clojurescript.
@@ -97,3 +98,6 @@ will be generated.
 
 You can use it as a template to create your own cljs-jxa-shadow project and hopefully we
 can use it as a springboard to more automation done the clojure way.
+
+For anyone interested in the space, there's a great new project that makes it possible to
+do the same thing directly on the command line! It's called [obb](https://github.com/babashka/obb).

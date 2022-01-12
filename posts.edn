@@ -1,4 +1,16 @@
 {:title "Cljs to jxa for automation"
  :file "cljs-to-jxa-for-automation.md"
  :categories #{"clojure" "jxa" "clojurescript" "tools" "portal"}
- :date "2021-12-09"}
+ :date "2021-12-09"
+ :discuss "https://github.com/Cyrik/blog/discussions/4"}
+
+{:title "Clojure analysis and introspection"
+ :file "clojure-analysis-and-introspection.md"
+ :categories #{"clojure" "analysis" "jvm" "tools"}
+ :date "2022-01-05"
+ :discuss "https://github.com/Cyrik/blog/discussions/6"}
+
+{:title "Clojure compiler class cache and JVM soft references"
+ :file "clojure-compiler-class-cache.md"
+ :categories #{"clojure" "jvm" "reference" "analysis"}
+ :date "2022-01-07"}
